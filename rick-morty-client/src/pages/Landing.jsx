@@ -15,7 +15,7 @@ const Landing = () => {
           </h1>
           <p>
             Welcome to Rick-Morty character app where you can register
-            for free and select your favorite characters! All for free!
+            for free and select your favorite characters! - Zeynep Aykal
           </p>
           <Link to='/register' className='btn register-link'>
             Register
