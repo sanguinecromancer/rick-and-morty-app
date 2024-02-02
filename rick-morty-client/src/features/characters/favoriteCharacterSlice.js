@@ -58,28 +58,24 @@ const characterSlice = createSlice({
   name: 'character',
   initialState,
   reducers: {
-    getIdsOfFavorites: (state) => {
-      state.favoriteIds = state.favoriteCharacterItems.map((item) => item.id);
-    }
   },
   extraReducers: (builder) => {
     builder
       .addCase(getFavoriteCharacterItems.pending, (state) => {
-        state.isLoading = true;
+        //state.isLoading = true;
       })
       .addCase(getFavoriteCharacterItems.fulfilled, (state, action) => {
-        state.isLoading = false;
+        //state.isLoading = false;
         let favorites = action.payload.favoriteCharacters;
         state.favoriteCharacterItems = favorites;
         state.favoriteIds = favorites.map((item) => item.id);
       })
       .addCase(getFavoriteCharacterItems.rejected, (state, action) => {
         console.log(action);
-        state.isLoading = false;
+      //  state.isLoading = false;
       });
   },
 });
 
-export const { getIdsOfFavorites } = characterSlice.actions;
 
 export default characterSlice.reducer;
