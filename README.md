@@ -1,4 +1,4 @@
-Hello :) This is Zeynep and my app can be built this way:
+
 
 From the rick-morty directory:
     npm run setup-project
@@ -12,6 +12,14 @@ This will create a both frontend (localhost:5173) and backend (port:5100) server
 
 Important: It is required to have .env environmental variables in the root folder. I will write this file content in the email to Carla.
 The app won't work without it.
+
+
+Production build: 
+
+from the rick-morty-client folder:
+npm run build
+
+copy everything inside the dist folder and then move them to rick-morty/public (not the client side public)
 
 
 ------FEATURES--------------
