@@ -14,7 +14,7 @@ export async function loadAllCharacters() {
 		console.log('loaded ' + allCharacters.length + ' characters');
 		return allCharacters;
 	} catch (error) {
-		console.errror(error);
+		console.error(error);
 	}
 }
 
